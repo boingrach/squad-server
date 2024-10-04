@@ -14,6 +14,8 @@ ENV MODS "()"
 
 COPY entry.sh ${HOMEDIR}
 
+RUN apt-get update && apt-get install -y dos2unix --no-install-recommends
+
 RUN set -x \
   && mkdir -p "${STEAMAPPDIR}" \
   && chmod 755 "${HOMEDIR}/entry.sh" "${STEAMAPPDIR}" \

@@ -84,4 +84,4 @@ bash "${STEAMAPPDIR}/SquadGameServer.sh" \
   "$fixed_max_players_arg" \
   "$fixed_max_tickrate_arg" \
   "$random_arg" \
-  "$crash_dump_arg"
+  "$crash_dump_arg" | dos2unix
